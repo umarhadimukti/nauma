@@ -1,0 +1,17 @@
+@layer components {
+
+  .input-error {
+    @apply ring ring-red-600;
+  }
+  
+  .input-primary {
+    /* @apply focus:bg-form-bg bg-form-bg focus:outline-alerange focus:outline-none; */
+    @apply focus:outline-none focus:ring-0 focus:border-alerange focus:bg-form-bg bg-form-bg;
+  }
+  
+  .input-primary-outline {
+    @apply bg-[#fff] focus:bg-[#fff] border-alerange focus:border-alerange;
+    @apply file:bg-alerange file:text-white file:rounded-md file:p-2;
+  }
+
+}
