@@ -23,6 +23,7 @@
     },
     "dependencies": {
         "flickity": "^3.0.0",
-        "react-flickity-component": "^4.0.7"
+        "react-flickity-component": "^4.0.7",
+        "react-player": "^2.13.0"
     }
 }
