@@ -2,12 +2,16 @@
 @tailwind components;
 @tailwind utilities; */
 
+/* base style */
 @import 'tailwindcss/base';
 
+/* component style */
 @import 'tailwindcss/components';
 @import './input.css';
 @import './button.css';
+@import './sidebar.css';
 
+/* utilities style */
 @import 'tailwindcss/utilities';
 
 .flex::before,
