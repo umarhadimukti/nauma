@@ -1,3 +1,20 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
+
+/* base style */
+@import 'tailwindcss/base';
+
+/* component style */
+@import 'tailwindcss/components';
+@import './input.css';
+@import './button.css';
+@import './sidebar.css';
+
+/* utilities style */
+@import 'tailwindcss/utilities';
+
+.flex::before,
+.flex::after {
+  display: none !important;
+}
