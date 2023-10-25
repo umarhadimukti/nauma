@@ -1,10 +1,12 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\UserDashboardController;
+use App\Http\Controllers\User\DashboardController;
+use App\Http\Controllers\User\MovieController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,12 +21,9 @@ use Inertia\Inertia;
 
 Route::permanentRedirect('/', '/login');
 
-Route::get('/dashboard', function () {
-    return Inertia::render('User/Dashboard/Index');
-})->middleware(['auth', 'verified'])->name('dashboard');
-
 Route::middleware(['auth', 'role:user'])->prefix('dashboard')->name('dashboard.user.')->group(function () {
-    Route::get('/', [UserDashboardController::class, 'index'])->name('index');
+    Route::get('/', [DashboardController::class, 'index'])->name('index');
+    Route::get('movies/{movie:slug}', [MovieController::class, 'show'])->name('movie.show');
 });
 
 Route::prefix('prototype')->name('prototype.')->group(function () {

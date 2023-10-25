@@ -30,7 +30,7 @@ export default function FeaturedMovie({
           <img src="/icons/ic_play.svg" width="50" alt="" />
         </div>
       </div>
-      <Link href={route('prototype.movie.show', slug)} className="inset-0 absolute z-50 cursor-grab active:cursor-grabbing" />
+      <Link href={route('dashboard.user.movie.show', slug)} className="inset-0 absolute z-50 cursor-grab active:cursor-grabbing" />
     </div>
   )
 }

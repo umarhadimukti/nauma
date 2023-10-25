@@ -1,17 +1,18 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\User;
 
+use Inertia\Inertia;
 use App\Models\Movie;
 use Illuminate\Http\Request;
-use Inertia\Inertia;
+use App\Http\Controllers\Controller;
 
-class UserDashboardController extends Controller
+class DashboardController extends Controller
 {
     public function index()
     {
-        $featuredMovies = Movie::whereIsFeatured(true)->get();
         $movies = Movie::all();
+        $featuredMovies = Movie::whereIsFeatured(true)->get();
         return Inertia('User/Dashboard/Index', [
             'movies' => $movies,
             'featured_movies' => $featuredMovies
