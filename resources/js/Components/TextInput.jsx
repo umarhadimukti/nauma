@@ -1,7 +1,7 @@
 import { forwardRef, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 
-const TextInput = forwardRef(({ type = 'text', className = '', isFocused = false, value, defaultValue, name, placeholder, variant = 'primary', isError, autoComplete, required, ...props }, ref) => {
+const TextInput = forwardRef(({ type = 'text', id, className = '', isFocused = false, value, defaultValue, name, placeholder, variant = 'primary', isError, autoComplete, required, ...props }, ref) => {
     const input = ref ? ref : useRef();
 
     useEffect(() => {
@@ -14,6 +14,7 @@ const TextInput = forwardRef(({ type = 'text', className = '', isFocused = false
         <input
             {...props}
             type={type}
+            id={id}
             name={name}
             value={value}
             defaultValue={defaultValue}
@@ -31,6 +32,7 @@ const TextInput = forwardRef(({ type = 'text', className = '', isFocused = false
 TextInput.propTypes = {
     type: PropTypes.oneOf(['text', 'email', 'password', 'number', 'file']),
     name: PropTypes.string,
+    id: PropTypes.string,
     value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     defaultValue: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     className: PropTypes.string,
