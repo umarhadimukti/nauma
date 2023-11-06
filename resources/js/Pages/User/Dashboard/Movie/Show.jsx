@@ -1,13 +1,13 @@
 import { Link } from "@inertiajs/react";
 import ReactPlayer from "react-player";
 
-export default function Show() {
+export default function Show({ movie }) {
   return (
     <section className="mx-auto h-full pb-[50px] relative watching-page font-poppins bg-form-bg" id="stream">
       <div className="pt-[90px] rounded-lg flex items-center justify-center">
         <div className="overflow-hidden w-11/12 rounded-3xl shadow-lg">
           <ReactPlayer
-            url="https://www.youtube.com/watch?v=kcnwI_5nKyA"
+            url={movie.video_url}
             controls
             width="100%"
             height="700px"
@@ -25,7 +25,7 @@ export default function Show() {
       {/* Video Title */}
       <div className="absolute title-video top-7 left-1/2 -translate-x-1/2 max-w-[310px] md:max-w-[620px] text-center">
         <span className="font-medium text-2xl transition-all text-white drop-shadow-md select-none">
-          Details Screen Part Final
+          {movie.name}
         </span>
       </div>
     </section>
