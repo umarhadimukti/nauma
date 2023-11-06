@@ -24,9 +24,9 @@ Route::permanentRedirect('/', '/login');
 
 Route::middleware(['web', 'auth', 'role:user'])->prefix('dashboard')->name('dashboard.user.')->group(function () {
     Route::get('/', [DashboardController::class, 'index'])->name('index');
-    Route::get('movies/{movie:slug}', [MovieController::class, 'show'])->name('movie.show');
-    Route::get('subscription-plan', [SubscriptionPlanController::class, 'index'])->name('subscription.index');
-    Route::post('subscription-plan/{subscription}/user-subscribe', [SubscriptionPlanController::class, 'userSubscribe'])->name('subscription.user-subscribe');
+    Route::get('movies/{movie:slug}', [MovieController::class, 'show'])->name('movie.show')->middleware('checkUserSubscription:true');
+    Route::get('subscription-plan', [SubscriptionPlanController::class, 'index'])->name('subscription.index')->middleware('checkUserSubscription:false');
+    Route::post('subscription-plan/{subscription}/user-subscribe', [SubscriptionPlanController::class, 'userSubscribe'])->name('subscription.user-subscribe')->middleware('checkUserSubscription:false');
 });
 
 Route::prefix('prototype')->name('prototype.')->group(function () {
