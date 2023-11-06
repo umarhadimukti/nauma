@@ -19,7 +19,7 @@ class MovieTableSeeder extends Seeder
                 'slug' => 'the-walking-dead',
                 'category' => 'Action',
                 'video_url' => 'https://www.youtube.com/watch?v=VBDd7dV1GLo&pp=ygUQdGhlIHdhbGtpbmcgZGVhZA%3D%3D',
-                'thumbnail' => 'https://i.ytimg.com/vi/VBDd7dV1GLo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDiB2A3ta7TNK6oqbIFCDpG8qetBg',
+                'thumbnail' => 'https://images.hdqwalls.com/wallpapers/the-walking-dead-season-10-t7.jpg',
                 'rating' => 4.7,
                 'is_featured' => 1
             ],
@@ -28,7 +28,7 @@ class MovieTableSeeder extends Seeder
                 'slug' => 'avengers-end-game-2019',
                 'category' => 'Action',
                 'video_url' => 'https://www.youtube.com/watch?v=BKviRM0KF2A&pp=ygURYXZlbmdlcnMgZW5kIGdhbWU%3D',
-                'thumbnail' => 'https://i.ytimg.com/vi/BKviRM0KF2A/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCBi_xyVx9-4bcFCqaFiSVj5joZaQ',
+                'thumbnail' => 'https://images.alphacoders.com/111/1119553.jpg',
                 'rating' => 4.8,
                 'is_featured' => 0
             ],
@@ -37,7 +37,7 @@ class MovieTableSeeder extends Seeder
                 'slug' => 'the-nun-2',
                 'category' => 'Horror',
                 'video_url' => 'https://www.youtube.com/watch?v=QF-oyCwaArU&pp=ygUHdGhlIG51bg%3D%3D',
-                'thumbnail' => 'https://i.ytimg.com/vi/QF-oyCwaArU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAzRtcIdsCrBshZxejIFY60oHRbIQ',
+                'thumbnail' => 'https://www.blibli.com/friends-backend/wp-content/uploads/2023/07/B700237-Cover-Sinopsis-The-Nun-2-scaled.jpg',
                 'rating' => 4.2,
                 'is_featured' => 1
             ],
@@ -55,7 +55,7 @@ class MovieTableSeeder extends Seeder
                 'slug' => 'avatar-the-way-of-water',
                 'category' => 'Action',
                 'video_url' => 'https://www.youtube.com/watch?v=d9MyW72ELq0&pp=ygUIYXZhdGFyIDI%3D',
-                'thumbnail' => 'https://i.ytimg.com/vi/d9MyW72ELq0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCRTfyihvnh7UWO5qpp_hgtIdkCow',
+                'thumbnail' => 'https://i0.wp.com/hepii.com/wp-content/uploads/2019/05/Avatar.jpg?resize=1140%2C646&ssl=1',
                 'rating' => 4.8,
                 'is_featured' => 1
             ]

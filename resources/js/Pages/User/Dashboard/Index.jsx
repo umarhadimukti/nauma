@@ -21,7 +21,7 @@ export default function Dashboard({ auth, movies, featured_movies }) {
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
       </Head>
       <div>
-        <div className="font-semibold text-[22px] text-black mb-4">Featured Movies</div>
+        <div className="font-semibold text-[22px] text-black mb-4">Paling Populer</div>
         <Flickity className="gap-[30px]" options={flickityOptions}>
           {featured_movies.map((movie) => {
             {/* Movie Thumbnail */ }
@@ -30,7 +30,7 @@ export default function Dashboard({ auth, movies, featured_movies }) {
         </Flickity>
       </div>
       <div className="mt-[50px]">
-        <div className="font-semibold text-[22px] text-black mb-4">Browse</div>
+        <div className="font-semibold text-[22px] text-black mb-4">Semua Film</div>
         <Flickity options={flickityOptions}>
           {movies.map((movie) => {
             {/* Movie */ }
