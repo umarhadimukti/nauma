@@ -16,7 +16,8 @@ class UserTableSeeder extends Seeder
         $admin = User::create([
             'name' => 'admin',
             'email' => 'admin@nauma.test',
-            'password' => bcrypt('Admin')
+            'password' => bcrypt('Admin'),
+            'role' => '1'
         ]);
 
         $admin->assignRole('admin');

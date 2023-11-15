@@ -30,9 +30,9 @@ export default function Sidebar({ auth }) {
           </div>
           {/* Others */}
 
-          <SubscriptionDetail
+          {/* <SubscriptionDetail
             isPremium
-          />
+          /> */}
 
           {/* Subcription details */}
           {/* {auth.activePlan && (
