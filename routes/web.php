@@ -5,6 +5,7 @@ use App\Http\Controllers\User\DashboardController;
 use App\Http\Controllers\User\MovieController;
 use App\Http\Controllers\User\SubscriptionPlanController;
 use App\Http\Controllers\Admin\MovieController as AdminMovieController;
+use App\Models\SubscriptionPlan;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -20,6 +21,8 @@ use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::post('midtrans/notification', [SubscriptionPlan::class, 'midtransCallback']);
 
 Route::permanentRedirect('/', '/login');
 
