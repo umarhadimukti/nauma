@@ -22,7 +22,7 @@ use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 |
 */
 
-Route::post('midtrans/notification', [SubscriptionPlan::class, 'midtransCallback']);
+Route::post('midtrans/notification', [SubscriptionPlanController::class, 'midtransCallback']);
 
 Route::permanentRedirect('/', '/login');
 
